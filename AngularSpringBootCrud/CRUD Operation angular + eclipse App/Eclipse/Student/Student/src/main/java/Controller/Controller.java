@@ -16,7 +16,8 @@ import Model.Student;
 import Service.Student_Service;
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200")
+//@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(allowedHeaders = "*", origins = { "*" }) 
 @RequestMapping(value="/api")
 public class Controller {
 	
